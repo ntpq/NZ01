@@ -1,0 +1,48 @@
+/* Font Families and Sizes */
+.font-example {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+/* Formatting Text */
+.formatting-example .bold {
+	font-weight: bold;
+}
+
+.formatting-example .italic {
+	font-style: italic;
+}
+
+.formatting-example .underline {
+	text-decoration: underline;
+}
+
+/* Text Alignment */
+.alignment-example {
+	text-align: center;
+}
+
+/* Text Decoration */
+.decoration-example {
+	text-decoration: line-through;
+}
+
+/* Line Height and Line Spacing */
+.line-spacing-example {
+	letter-spacing: 2px;
+	line-height: 3;
+}
+
+/* Text Shadows */
+.shadow-example {
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Web safe fonts and Google Fonts */
+.web-safe-font {
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.google-font {
+	font-family: "Roboto Mono", monospace;
+}
