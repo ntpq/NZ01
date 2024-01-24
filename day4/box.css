@@ -1,0 +1,33 @@
+/* * {
+  border: 1px red dashed;
+} */
+
+#box {
+  padding-left: 20px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pad-short {
+  padding: 50px 30px 20px 10px;
+}
+#border {
+  border: 3px solid blue;
+}
+
+.mix-borders {
+  border-style: dotted dashed solid double;
+  border-radius: 10px;
+}
+
+#last-div {
+  border: 1px dotted red;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#margin-short {
+  border: 1px dashed blue;
+  margin: 20px 30px 20px 10px;
+}

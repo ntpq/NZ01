@@ -1,0 +1,63 @@
+.color-example {
+  color: red;
+  background-color: blanchedalmond;
+}
+.background-example {
+  background-color: #fff000;
+}
+.background-position-example {
+  background-image: url("background.jpg");
+  background-position: center;
+}
+.opacity-example {
+  background-color: rgb(255, 0, 0, 0.2);
+}
+.image-example {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tag selector */
+h1 {
+  color: blueviolet;
+}
+/* Class selector */
+/* .class-name{} */
+
+/* #id-name{} */
+#id-selector-example {
+  background-color: aquamarine;
+}
+
+/* Universal Selector */
+/* *{} */
+/* *{
+    background-image: url("background.jpg");
+} */
+
+/* Grouping Selector */
+/* h1,h2,h3,h4,h5,h6{} */
+
+/* descendant Selector */
+/* .example p{} */
+.descendant li{
+    color: red;
+}
+
+/* pseudo classes */
+button:hover{
+    background-color: red;
+}
+
+/* pseudo elements */
+
+.pseudo-element::before{
+    content: "Hello";
+}
+
+.pseudo-element::after{
+    content: " !";
+    color: red;
+}

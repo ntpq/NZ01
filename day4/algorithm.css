@@ -1,0 +1,9 @@
+/* Earlier rule */
+p {
+	color: red;
+}
+
+/* Later rule - the one that will be applied */
+p {
+	color: blue;
+}
