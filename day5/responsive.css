@@ -1,0 +1,30 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	padding: 50px;
+	background-color: beige;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	section {
+		padding: 100px;
+		background-color: skyblue;
+	}
+
+	section p {
+		font-size: 30px;
+		background-color: antiquewhite;
+	}
+}
+
+/* 
+< 481px = Mobile Devices
+481px - 768px = iPads or Tablets
+769px - 1024px = Laptops or small screens
+1025px - 1200px = larger screens or monitors
+1201px = very large screens
+*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Grid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <!-- Nesting Columns -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6 border">
+          <p>Main Column</p>
+          <div class="row">
+            <div class="col-6 border">
+              <p>Nested Column 1</p>
+            </div>
+            <div class="col-6 border">
+              <p>Nested Column 2</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 border">
+          <p>Another Column</p>
+        </div>
+      </div>
+      <!-- Responsive Display Classes -->
+      <div class="container">
+        <div class="row">
+          <div class="border d-none d-sm-block d-md-none">Visible Only in Small Screens</div>
+          <div class="border d-none d-md-block d-lg-none">Visible Only in Medium Screens</div>
+          <div class="border d-none d-lg-block d-xl-none">Visible Only in Large Screens</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
