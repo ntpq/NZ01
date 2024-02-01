@@ -1,0 +1,19 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.h1,.h2 {
+  font-family: "Montserrat", sans-serif;
+}
+*{
+    border: 1px dotted red
+}
+header.container{
+    height: 120px;
+}
+.navigation{
+  list-style-type: none;
+}
+.site-title{
+    text-transform: uppercase;
+    text-align: center;
+}

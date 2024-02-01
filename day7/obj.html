@@ -1,0 +1,55 @@
+//object literals
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Object Literals </title>
+</head>
+<body>
+
+    <script>
+
+        const person = {
+
+            firstName: "John",
+            lastName: "Doe",
+            age: 25,
+            hobbies: ['reading', 'coding', 'hiking'],
+
+            greet: function () {
+                console.log("Hello, my name is " + person.firstName + " " + this.lastName + ". Nice to meet you!") ;
+            }
+        }
+
+        console.log(person.firstName);
+        console.log(person.age);
+        person.greet();
+
+        person.lastName = "Smith";
+        console.log(person.lastName);
+
+        person.nationality = 'American';
+        console.log(person)
+
+        person.introduce = function () {
+            console.log("I am " + person.firstName + " " + person.lastName + ".");
+        }
+
+        person.introduce();
+        console.log(person)
+
+        const address = { 
+            street: '123 Main St',
+            city: 'New York',
+            country: 'USA'
+        }
+
+        person.address = address;
+        console.log(person);
+
+    </script>
+    
+</body>
+</html>
