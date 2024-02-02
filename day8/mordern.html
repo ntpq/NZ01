@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern JS Part I</title>
+  </head>
+  <body>
+    <script>
+      //         Exercise 1: Function Basics
+      // Create a function called greet that takes a name as a parameter and logs a greeting message with the name to the console. Then, call the function with your name.
+        function greet(name){
+            console.log(`Hello ${name} !`);
+        }
+        console.log("Exercise 1: Function Basics");
+        greet('IQ');
+      // Exercise 2: Function Expression
+      // Create a function expression named add that takes two numbers as parameters and returns their sum. Call the function to add 5 and 7, then log the result.
+        function add(number1,number2){
+            return number1 + number2;
+        }
+        console.log(`Exercise 2: Function Expression`);
+        console.log("5 + 7 = ",add(5,7));
+      // Exercise 3: Is Even
+      // Write a function called isEven that takes a number as a parameter and returns true if it's even and false if it's odd. Test the function with various numbers.
+        function isEven(number){
+            if(number%2 == 0){
+                return true;
+            }
+            return false;
+        }
+        console.log(`Exercise 3: Is Even`);
+        console.log("Is 9 Even ? :",isEven(8));
+      // Exercise 4: Local vs. Global Scope
+      // Declare a global variable globalVar with a value. Then, create a function that declares a local variable with the same name globalVar. Log the values of both variables inside and outside the function. What do you observe?
+        console.log("Exercise 4: Local vs. Global Scope");
+        const globalVar = "globalVar";
+        const localFunction = ()=>{
+            const globalVar = "localVar";
+            console.log('globalVar in function :>> ', globalVar);
+        }
+        console.log('globalVar :>> ', globalVar);
+        localFunction();
+      // Exercise 5: Function Hoisting
+      // Write a function named hoistedFunction and call it before the function declaration in your code. Does it work? Explain the behavior..
+      console.log("Exercise 5: Function Hoisting");
+      hoistedFunction();
+      function hoistedFunction(){
+        console.log("hoistedFunction !!")
+      }
+      hoistedArrowFunction();
+      const hoistedArrowFunction = ()=> console.log("hoistedArrowFunction !!!")
+    </script>
+  </body>
+</html>
