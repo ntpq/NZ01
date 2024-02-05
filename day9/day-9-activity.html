@@ -1,0 +1,31 @@
+<!-- Instructions:
+Create a Task Manager using Javascript (Here's the code base for HTML *wink*)
+1. Access the elements needed from HTML
+2. Add an event listener for form submission
+3. Create a function to add a Task.
+  When the user enters a task in the input field and clicks the "Add" button, the task should be added to the list of tasks displayed on the webpage.
+   Hint: The event listener call the function to add a Task
+4. Display task: Each task should be displayed as a list item (<li>) inside an unordered list (<ul>).
+5. Removing Tasks: Include a "Remove" button next to each task. When the "Remove" button is clicked, the corresponding task should be removed from the list. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>Task Manager</h1>
+    <div class="container">
+      <form id="taskForm">
+        <div>
+          <input type="text" id="taskInput" placeholder="Add a task..." />
+          <button type="submit">Add Task</button>
+        </div>
+        <p class="inputError" style="color: red"></p>
+      </form>
+      <ul id="taskList"></ul>
+    </div>
+    <script src="activity.js"></script>
+  </body>
+</html>

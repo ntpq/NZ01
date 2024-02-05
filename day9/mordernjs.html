@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Array Destructuring -->
+    <script>
+        const array = [1,2,3,4,5]
+        console.log('array :>> ', ...array);
+    </script>
+    <!-- String -->
+    <script>
+        // split
+        const message = 'Hello word';
+        const word = message.split("");
+        console.log(word);
+        // includes
+        const sentence = "The quick brown fox jumps over the lazy dog";
+        const containsWord = sentence.includes("fox");
+        console.log('containsWord :>> ', containsWord);
+        // length
+        const sampleString = "Welcome to the world of JS features";
+        const strLength = sampleString.length;
+        console.log('strLength :>> ', strLength);
+        //Math
+        //max
+        const maxNumber = Math.max(1,2,20,3,100)
+        console.log('maxNumber :>> ', maxNumber);
+        //min
+        const minNumber = Math.min(1,25,5,0.1);
+        console.log('minNumber :>> ', minNumber);
+        //random
+        const randomNumber = Math.random();
+        const randomNumberBetween = Math.random()*(100-10+1)+10;
+        console.log('randomNumber :>> ', randomNumber,randomNumberBetween);
+        //floor , ceil and round
+        const roundDownNumber = Math.floor(3.14);
+        const roundUpNumber = Math.ceil(3.14)
+        const roundNumber = Math.round(3.4)
+        console.log('roundDownNumber,roundUpNumber :>> ', roundDownNumber, roundUpNumber,roundNumber);
+
+        // toFixed
+        const fixedNumber = (3.141592).toFixed(2);
+        console.log('fixedNumber :>> ', fixedNumber);
+        //Date()
+        const currentDate = new Date();
+        console.log('currentDate :>> ', currentDate);
+    </script>
+</body>
+</html>
