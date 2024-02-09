@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header>
       <div className='portfolio-container'>Portfolio.</div>
-      <div className='menu-container'>
+      <nav className='menu-container'>
         <ul className='menu'>
-          <li className='menu-items'>Home</li>
-          <li className='menu-items'>About</li>
-          <li className='menu-items'>Project</li>
-          <li className='menu-items'>Contact</li>
+          <li className='menu-items'><Link to="/">Home</Link></li>
+          <li className='menu-items'><Link to="/about">About</Link></li>
+          <li className='menu-items'><Link to="/projects">Project</Link></li>
+          <li className='menu-items'><Link to="/contact">Contact</Link></li>
         </ul>
-      </div>
+      </nav>
       <div className='social-container'>
         <a href='#'>
           <img src='./fb-icon.svg' alt='facebook' className='social-media-icon' />
