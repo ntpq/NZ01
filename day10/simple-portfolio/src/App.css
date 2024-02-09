@@ -6,7 +6,7 @@
 }
 a{
   text-decoration: none;
-  transition: border 0.2s ease;
+  transition: border 0.1s ease;
 }
 a:hover {
   border-bottom: 2px solid #4070f4;
