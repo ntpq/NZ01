@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  /* border: 1px dashed red; */
+}
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0 6rem;
+  padding-bottom: 6rem;
+  background: #f1f1f1;
+}
+.App {
+  width: 100%;
+}
+header {
+  text-align: center;
+  padding: 0.5rem 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .portfolio-container {
+    font-size: 32px;
+    color: #4070f4;
+    font-weight: bold;
+  }
+  .menu-container {
+    .menu {
+      font-size: 18px;
+      list-style: none;
+      display: flex;
+      padding: 0;
+      .menu-items {
+        margin: 0 16px;
+        color: #0e2431;
+      }
+    }
+  }
+  .social-container {
+    .social-media-icon {
+      width: 24px;
+      height: 24px;
+      margin: 0 14px;
+      filter: invert(42%) sepia(44%) saturate(5068%) hue-rotate(212deg) brightness(97%) contrast(97%);
+    }
+  }
+}
+.home-container {
+  position: relative;
+
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    color: #0e2431;
+  }
+  h1 {
+    font-size: 72px;
+  }
+  h2,
+  h4 {
+    font-size: 32px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 48px;
+    color: #4070f4;
+    font-weight: 400;
+  }
+  .profile-container {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    .profile-img {
+      opacity: 0.9;
+      width: 560px;
+      height: 480px;
+      /* border-radius: 30% 70% 57% 43% / 20% 30% 70% 80%  ; */
+      /* background-image: linear-gradient(to bottom, #4070f4, #838df4, #aeadf3, #d2cef2, #f1f1f1); */
+      object-fit: contain;
+      filter: brightness(1.1);
+      /* box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75); */
+    }
+  }
+}
+.about-section {
+  h2 {
+    text-align: center;
+    font-size: 32px;
+  }
+  .about-container {
+    display: flex;
+    justify-content: space-around;
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      .about-image {
+        opacity: 0.9;
+        width: 500px;
+        height: 400px;
+        object-fit: contain;
+        transform: scaleX(-1);
+        /* border-radius: 81% 19% 70% 30% / 42% 70% 30% 58% ;
+        box-shadow: -8px 8px 20px 0px rgba(0,0,0,0.75); */
+      }
+    }
+    .paragraph-container {
+      margin-left: 3rem;
+      width: 700px;
+      p {
+        font-size: 20px;
+        text-align: justify;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.projects-section-container {
+  margin-top: 12rem;
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 4rem;
+  }
+  .project-container {
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 16px;
+      grid-row-gap: 16px;
+      li {
+        position: relative;
+        .container {
+          border-radius: 16px;
+          background-color: #4070f4;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        img {
+          max-height: 300px;
+        }
+        h4 {
+          position: absolute;
+          top: -10px;
+          right: 10px;
+          background-color: rgb(207, 203, 203);
+          color: #0e2431;
+          padding: 8px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+.contact-container {
+  h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 300px;
+    }
+  }
+  form {
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    margin-left: 5rem;
+    max-width: 300px;
+    .input {
+      margin: 1rem 0;
+      font-size: 24px;
+      border-radius: 8px;
+      border: none;
+      padding: 1rem;
+    }
+  }
+  input {
+    height: 32px;
+  }
+  .div-button{
+    display: flex;
+    align-items: center;
+  }
+  button {
+    border-radius: 8px;
+    border-color: #4070f4;
+    background-color: #4070f4;
+    color: white;
+    width: 100px;
+    padding: 8px;
+  }
+}
